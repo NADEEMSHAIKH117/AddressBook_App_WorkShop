@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,91 @@
     <link rel="stylesheet" href="/css/addressbook.css">
     <title>Address Book</title>
 </head>
+
 <body>
-<!-- UC1 -->
+    <!-- UC1 -->
     <header class="header-content header">
         <div class="logo-content">
-            <img src="/assets/logo.png" alt="logo">
+            <img class="book-img"
+                src="/assets/kisspng-logo-book-wallpaper-book-writing-5a9adad00c7526.1701805015200980000511.png"
+                alt="logo" />
             <div>
-                <span class="addressBook-text">ADDRESS</span><br>
-                <span class="addressBook-text addressBook-book">BOOK</span>
+                <span class="addressBook-text">Address</span><br>
+                <span class="addressBook-text addressBook-book">Book</span>
             </div>
         </div>
     </header>
     <!-- UC2 -->
-    <div class="form-content">
-        <form action="#" class="form" onreset="resetForm()" onsubmit="save()">
-        <div class="form-head">
-            <div class="form-head-text">PERSON ADDRESS FORM</div>
-            <a href="/html/addressbook.html"><img class="form-head-image" src="/assets/cancel.png" alt="logo" width="40" height="40"></a>
+        <div class="form-content">
+            <form action="#" class="form">
+                <div class="form-head">
+                    <div class="form-head-text">Person Address Form</div>
+                    <a href="/html/addressbook.html"><img class="form-head-image" src="/assets/cancel.png"
+                            alt="logo"></a>
+                </div>
+    <!-- UC3 -->
+    <div class="form-con">
+        <div class="row-content">
+            <label for="name" class="label text">Full Name</label>
+            <br>
+            <input type="text" class="input" id="name" name="name" placeholder="Enter Your name.." autocomplete="off" required>
         </div>
-        </form>
+
+        <div class="row-content">
+            <label for="phoneNumber" class="label text">Phone Number</label>
+            <br>
+            <input type="tel" class="input" id="phoneNumber" name="phoneNumber" placeholder=" Phone number.."
+                autocomplete="off" required>
+            <error-output class="tel-error"></error-output>
+        </div>
+
+        <div class="row-content">
+            <label for="address" class="label text">Address</label>
+            <br>
+            <textarea name="address" id="address" placeholder="Address.." autocomplete="off" required></textarea>
+        </div>
+
+        <div class="row-content">
+            <div class="column-con">
+                <div class="column-content">
+                    <label for="city" class="label text">City</label>
+                    <br>
+                    <select name="city" id="city" required>
+                        <option value="Pune">Pune</option>
+                        <option value="Satara">Satara</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Delhi">Delhi</option>
+
+                    </select>
+                </div>
+
+                <div class="column-content">
+                    <label for="state" class="label text">State</label>
+                    <br>
+                    <select name="state" id="state">
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    </select>
+                </div>
+
+                <div class="column-content">
+                    <label for="zip" class="label text">Zip code</label>
+                    <br>
+                    <input type="text" class="input zipcode" id="zip" name="zip" autocomplete="off"
+                        placeholder="Your zipcode.." required>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    </form>
+    </div>
+
 </body>
+
 </html>
