@@ -24,14 +24,16 @@
             </div>
         </div>
     </header>
-    <!-- UC2 -->
+
     <div class="form-content">
-        <form action="#" class="form">
+        <!-- UC2 -->
+        <form action="#" class="form" onreset="resetForm()" onsubmit="save()">
             <div class="form-head">
-                <div class="form-head-text">Person Address Form</div>
+                <div class="form-head-text">PERSON ADDRESS FORM</div>
                 <a href="/html/addressbook.html"><img class="form-head-image" src="/assets/cancel.png" alt="logo"></a>
             </div>
             <!-- UC3 -->
+            
             <div class="form-con">
                 <div class="row-content">
                     <label for="name" class="label text">Full Name</label>
@@ -58,6 +60,7 @@
 
                 <div class="row-content">
                     <div class="column-con">
+
                         <div class="column-content">
                             <label for="city" class="label text">City</label>
                             <br>
@@ -92,9 +95,19 @@
                             <input class="input" type="type" name="Zip" id="zip" placeholder="Your Zip Code.." required>
                             <error-output class="zip-error" for="zip"></error-output>
                         </div>
+
                     </div>
                 </div>
             </div>
+
+            <div class="button-content">
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" onsubmit="save()" id="submitButton">Add</button>
+                    <button type="reset" class="resetButton button" onreset="resetForm()"
+                        id="resetButton">Reset</button>
+                </div>
+            </div>
+
         </form>
     </div>
 </body>
