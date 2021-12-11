@@ -1,4 +1,4 @@
-
+/* UC1 */
 * {
   box-sizing: border-box;
 }
@@ -48,8 +48,7 @@ body {
   color: #464f58;
 }
 
-
-
+/* UC2 */
 .form-content {
   min-height: calc(100% - 80px);
   background-color: #f7f7f7;
@@ -100,6 +99,7 @@ body {
   min-height: 80%;
   max-width: 100%;
 }
+/* UC3 */
 
 .form-con {
   margin: 2% 10%;
@@ -178,4 +178,11 @@ select {
   width: 100px;
   word-wrap: break-word;
   text-align: center;
+}
+
+/* UC4 */
+error-output{
+  font-size: 12px;
+  font-style: italic;
+  color: red;
 }
