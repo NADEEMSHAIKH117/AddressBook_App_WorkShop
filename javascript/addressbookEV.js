@@ -176,3 +176,22 @@ const getInputElementValue = (id) => {
 	let value = document.getElementById(id).value;
 	return value;
 }
+
+const resetForm = () => {
+	setTextValue('#name','');
+	setTextValue('#phoneNumber','');
+	setTextValue('#address','');
+	setValue('#city','');
+	setValue('#state','');
+    setTextValue('#zip','');
+}
+
+const setTextValue = (id, value) => {
+	const element = document.querySelector(id);
+	element.textContent = value;
+}
+
+const setValue = (id, value) => {
+	const element = document.querySelector(id);
+	element.value = value;
+}
